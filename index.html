@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Web App</title>
+    <style>
+      body {
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+      }
+      form input,
+      textarea {
+        margin-bottom: 1rem;
+        min-width: 20rem;
+        background-color: lightsalmon;
+        color: black;
+        min-height: 3rem;
+        color: black;
+        border: none;
+        cursor: pointer;
+      }
+
+      form button {
+        background-color: darkolivegreen;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        padding: 6px 24px;
+        cursor: pointer;
+      }
+      button {
+        cursor: pointer;
+      }
+      #blogContainer {
+        text-align: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog Web App</h1>
+
+    <form id="blogForm">
+      <input type="text" id="titleInput" placeholder="Title" required />
+      <textarea id="contentInput" placeholder="Content" required></textarea>
+      <button type="submit">Add Blog</button>
+    </form>
+
+    <div id="blogContainer"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
